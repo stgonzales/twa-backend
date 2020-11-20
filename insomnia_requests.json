@@ -1,0 +1,191 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2020-11-20T01:14:58.287Z",
+    "__export_source": "insomnia.desktop.app:v2020.4.2",
+    "resources": [
+        {
+            "_id": "req_9cdae07af3ab408486d43333a3e825d3",
+            "parentId": "fld_564258543cb14c45b7036e3e48006e9c",
+            "modified": 1604634344679,
+            "created": 1599292288836,
+            "url": "{{ baseUrl }}/users/8126e836-749f-4f30-bb8b-059103af6000",
+            "name": "Find One",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1599292288836,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_564258543cb14c45b7036e3e48006e9c",
+            "parentId": "wrk_32329cde5d584c51bd466c41b933f678",
+            "modified": 1599199271010,
+            "created": 1599199271010,
+            "name": "Users",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1599199271010,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_32329cde5d584c51bd466c41b933f678",
+            "parentId": null,
+            "modified": 1599199207324,
+            "created": 1599199207324,
+            "name": "TWA",
+            "description": "",
+            "scope": null,
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_dd3bf0b5cd0f4b199f15323b794b0ebb",
+            "parentId": "fld_564258543cb14c45b7036e3e48006e9c",
+            "modified": 1605834805583,
+            "created": 1599290089360,
+            "url": "{{ baseUrl }}/users/62ed0c61-df16-4675-b620-af26f91a5b91",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Danielle Guandelini\",\n  \"email\": \"danielle@gmail.com\",\n\t\"admin\": true,\n\t\"active\": false\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_d1475940abae4a72b501011f7b035b2a",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1599290089360,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_ab745d65cc4645e794d1c209ff0df7dc",
+            "parentId": "fld_564258543cb14c45b7036e3e48006e9c",
+            "modified": 1599294079730,
+            "created": 1599246583064,
+            "url": "{{ baseUrl }}/users",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"CLaudio Marques\",\n\t\"email\": \"claudio@gmail.com\",\n\t\"password\": \"123456\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_b9e93d5cb82e4adaaccafa847cd0db33",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1599246583064,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e353d6b2eef84d3b8aead1684d7a4c98",
+            "parentId": "fld_564258543cb14c45b7036e3e48006e9c",
+            "modified": 1599293965965,
+            "created": 1599199278259,
+            "url": "{{ baseUrl }}/users",
+            "name": "List",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1599199278259,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_847a41a3a563c0310215cb488f6a4171f80c13b3",
+            "parentId": "wrk_32329cde5d584c51bd466c41b933f678",
+            "modified": 1599199207573,
+            "created": 1599199207573,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1599199207573,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_847a41a3a563c0310215cb488f6a4171f80c13b3",
+            "parentId": "wrk_32329cde5d584c51bd466c41b933f678",
+            "modified": 1599199207578,
+            "created": 1599199207578,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_6c64ac8a61f64e699bc8566295a9d264",
+            "parentId": "wrk_32329cde5d584c51bd466c41b933f678",
+            "modified": 1599199207349,
+            "created": 1599199207349,
+            "fileName": "TWA",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "env_dc810fc181054ca6ba7b80753ebe0b5d",
+            "parentId": "env_847a41a3a563c0310215cb488f6a4171f80c13b3",
+            "modified": 1599199255371,
+            "created": 1599199213390,
+            "name": "dev",
+            "data": {
+                "baseUrl": "http://localhost:3333"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "baseUrl"
+                ]
+            },
+            "color": "#7d69cb",
+            "isPrivate": false,
+            "metaSortKey": 1599199213390,
+            "_type": "environment"
+        }
+    ]
+}
