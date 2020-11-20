@@ -21,17 +21,13 @@ With my past professional experiences, I notice gaps regarding internal and exte
 
 # How to use
 
-1. Clone this repo
+1. Clone this repo:
 
 `git clone git@github.com:stgonzales/twa-backend.git`
 
-2. Go to **twa-backend** folder and install all dependecies
+2. Go to **twa-backend** folder and install all dependecies just executing `yarn`.  
 
-`npm install`
-or
-`yarn`
-
-3. Make sure you have ***Postgres*** pre-installed locally with all the credentials bellow
+3. Make sure you have ***Postgres*** pre-installed locally with all the credentials bellow:
 
 ```
 "username": "postgres",
@@ -44,7 +40,7 @@ or
 > *I used a docker ***Postgres*** image, feel free to use the way you want*
 
 
-4. Execute the migrations command
+4. Execute the migrations command:
 
 `yarn typeorm migration:run`
 
@@ -52,6 +48,10 @@ or
 
 > *Make sure to install [Insomnia Core](https://insomnia.rest/) first.*
 
-6. Play around with the requests!
+6. Run the server:
+
+`yarn run der:server`
+
+7. Play around with the requests!
 
 >*Remember that this is a Work in Progress so bugs/no working feature is expected*
