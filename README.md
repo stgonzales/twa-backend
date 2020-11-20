@@ -50,7 +50,7 @@ With my past professional experiences, I notice gaps regarding internal and exte
 
 6. Run the server:
 
-`yarn run der:server`
+`yarn run dev:server`
 
 7. Play around with the requests!
 
