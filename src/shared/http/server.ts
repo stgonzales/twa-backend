@@ -5,8 +5,8 @@ import morgan from 'morgan';
 import cors from 'cors';
 
 import routes from './routes';
-import "./database";
-import AppError from "./errors/AppError";
+import "../../database";
+import AppError from "../../errors/AppError";
 
 require('dotenv').config();
 

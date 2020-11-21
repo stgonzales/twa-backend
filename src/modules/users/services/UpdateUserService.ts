@@ -3,7 +3,7 @@ import { hash } from "bcryptjs";
 
 import User from "../models/User";
 
-import AppError from "../errors/AppError";
+import AppError from "../../../errors/AppError";
 
 interface Request {
     id: string;
@@ -14,14 +14,11 @@ interface Request {
 }
 
 class UpdateUserService {
-    public async execute(newUserInfo: Request) {
+    public async execute({ id, name, email, admin, active }: Request) {
+
         const usersRepository = getRepository(User);
 
-        const checkUserExist = await usersRepository.findOne({
-            where: {
-                id: newUserInfo.id
-            }
-        })
+        const checkUserExist = await usersRepository.findOne(id)
 
         if (!checkUserExist) {
             throw new AppError("User not found!");
@@ -29,12 +26,14 @@ class UpdateUserService {
 
 
         const user = {
-            ...newUserInfo
+            id,
+            name,
+            email,
+            admin,
+            active
         }
 
-        delete user.id
-
-        await usersRepository.update(newUserInfo.id, user)
+        await usersRepository.update(id, user)
         // .then(res => {
         //     return res
         // })

@@ -6,7 +6,7 @@
     "password": "docker",
     "database": "twa",
     "entities": [
-        "./src/models/*.ts"
+        "./src/modules/**/models/*.ts"
     ],
     "migrations": [
         "./src/database/migrations/*.ts"
