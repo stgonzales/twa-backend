@@ -5,7 +5,7 @@ import User from "../models/User";
 
 import AppError from "../../../errors/AppError";
 
-interface Request {
+interface IRequest {
     name: string;
     email: string;
     password: string;
@@ -13,7 +13,7 @@ interface Request {
 }
 
 class CreateUserService {
-    public async execute({ name, email, password, admin }: Request) {
+    public async execute({ name, email, password, admin }: IRequest) {
 
         const usersRepository = getRepository(User);
 

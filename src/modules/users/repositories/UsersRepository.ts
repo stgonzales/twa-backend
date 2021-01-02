@@ -1,4 +1,6 @@
 import { EntityRepository, getRepository, Repository } from "typeorm";
+import { compare, } from 'bcryptjs'
+
 
 import User from "../models/User";
 
@@ -21,6 +23,20 @@ class UsersRepository /*implements IUsersRepository*/ {
         const user = await this.ormRepository.findOne(id)
 
         return user
+    }
+
+    public async findByEmail(email: string) {
+        const user = await this.ormRepository.findOne({
+            where: {
+                email: email
+            }
+        })
+
+        return user
+    }
+
+    public async compareHash(payload: string, hashed: string) {
+        return compare(payload, hashed)
     }
 
 }
