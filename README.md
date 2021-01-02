@@ -4,7 +4,7 @@ Created By: Stephen Goncalves
 
 Status: In Progress 🙌
 
-# Overview
+### Overview
 
 This API has been created to serve as back-end to the [TWA](https://github.com/stgonzales/twa) app.
 
@@ -19,7 +19,7 @@ This API has been created to serve as back-end to the [TWA](https://github.com/s
 
 With my past professional experiences, I notice gaps regarding internal and external tickets. So I decided to conciliate my studies with web development and created the Ticket Web App. I intend to apply all my knowledge acquired over time and solve these gaps with my personal opinion.🚀
 
-# How to use
+### How to use
 
 1. Clone this repo:
 
